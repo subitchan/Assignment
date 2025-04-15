@@ -123,9 +123,9 @@ public abstract class Event {
     public void displayEventDetails() {
         System.out.println("Event: " + eventName);
         System.out.println("Date: " + eventDate);
-        System.out.println("Time: " + eventTime);
+       System.out.println("Time: " + eventTime);
         System.out.println("Type: " + eventType);
-        System.out.println("Venue: " + (venue != null ? venue.getVenueName() : "N/A"));
+      System.out.println("Venue: " + venue.getVenueId());
         System.out.println("Available Seats: " + availableSeats);
         System.out.println("Price: ₹" + ticketPrice);
     }

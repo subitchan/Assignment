@@ -106,6 +106,8 @@ public class App {
                     Booking b = bookingService.getBookingDetails(id);
                     if (b != null) {
                         b.displayBookingDetails();
+                        System.out.println(b.getCustomers()[0].getCustomerName());
+                        System.out.println(b.getEvent().getEventName());
                     } else {
                         System.out.println("No booking found.");
                     }

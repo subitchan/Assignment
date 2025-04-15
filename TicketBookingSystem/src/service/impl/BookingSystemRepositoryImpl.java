@@ -264,6 +264,7 @@ public class BookingSystemRepositoryImpl implements IBookingSystemRepository {
             ResultSet rs = ps.executeQuery();
             if (rs.next()) {
                 Booking booking = new Booking();
+                booking.setBookingId(bookingId);
                 booking.setNumTickets(rs.getInt("num_tickets"));
                 booking.setTotalCost(rs.getDouble("total_cost"));
                 booking.setBookingDate(rs.getTimestamp("booking_date").toLocalDateTime());

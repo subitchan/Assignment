@@ -88,13 +88,7 @@ public class Booking {
         System.out.println("Date: " + bookingDate);
         System.out.println("Tickets: " + numTickets);
         System.out.println("Total: ₹" + totalCost);
-        if (event != null) {
-            event.displayEventDetails();
-        }
-        if (customers != null) {
-            for (Customer c : customers) {
-                c.displayCustomerDetails();
-            }
-        }
+       
+
     }
 }
